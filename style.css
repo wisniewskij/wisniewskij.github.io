@@ -28,11 +28,8 @@ h3{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 3.88vw;
 }
-h4{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 3.61vw;
-}
 .bt{
+	text-align: center;
 	font-family: 'Audiowide', cursive; 
 	color: white;
 	font-size: 3.88vw;
@@ -77,6 +74,10 @@ h4{
 }
 
 .btc{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	width: 54.444vw;
 	height: 9.166vw;
 	background: rgba(191,5,2,1);
@@ -222,9 +223,6 @@ h4{
 	}
 	h3{
 		font-size: 1.66vw;
-	}
-	h4{
-		font-size: 1.11vw;
 	}
 	.bt{
 		font-family: 'Audiowide', cursive; 
@@ -400,6 +398,8 @@ h4{
 		align-items:center;
 		justify-content:flex-end;
 		background-image: url("assets/bcgr2.png");
+		background-repeat: no-repeat;
+		background-size: cover;
 		height: fit-content;
 	}
 	#s5{
@@ -557,10 +557,10 @@ input[type=text]{
 	}
 }
 @media only screen and (min-width: 1024px) {
-	button.btc{
+	div.btc{
 		transition: .2s ease-in-out 0s;
 	}
-	button.btc:hover{
+	div.btc:hover{
 		cursor: pointer;
 		transform: scale(1.05);
 	}
@@ -622,6 +622,17 @@ input[type=text]{
 	display: none;
 } */
 
+.mininapis{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 3.61vw;
+}
+
+@media only screen and (min-width: 1024px){
+	.mininapis{
+		font-size: 1.11vw;
+	}
+}
+
 #footer{
 	padding-top: 23.333vw;
 	padding-bottom: 2.222vw;
@@ -681,7 +692,17 @@ input[type=text]{
 	padding-right: 5.55vw;
 }
 
-#boczna .flc h4{
+#boczna2 .flc{
+	padding-left: 5.55vw;
+	padding-right: 5.55vw;
+}
+
+
+#boczna .flc h3{
+	color: #FFFFFF;
+}
+
+#boczna2 .flc h3{
 	color: #FFFFFF;
 }
 
@@ -689,13 +710,16 @@ input[type=text]{
 	/* margin-bottom: 10px; */
 	color: #FFFFFF;
 }
-#footer_text h4{
+#footer_text h3{
 	font-size: 2.2vw;
 }
 
 @media only screen and (min-width: 550px) {
 
 	#boczna .flc{
+		gap: 4vw;
+	}
+	#boczna2 .flc{
 		gap: 4vw;
 	}
 	#arrow{
@@ -778,7 +802,20 @@ input[type=text]{
 		padding: 0px !important;
 	}
 
+	#boczna2{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap:2.5vw;
+		padding: 0px !important;
+	}
+
 	#boczna{
+		gap: 2.5vw !important;
+	}
+
+	#boczna2{
 		gap: 2.5vw !important;
 	}
 	
@@ -808,7 +845,17 @@ input[type=text]{
 		padding-right: 1.38vw;
 	}
 	
-	#boczna .flc h4{
+	#boczna .flc h3{
+		color: #FFFFFF;
+	}
+
+	#boczna2 .flc{
+		gap: 0.555vw;
+		padding-left: 1.38vw;
+		padding-right: 1.38vw;
+	}
+	
+	#boczna2 .flc h3{
 		color: #FFFFFF;
 	}
 	
@@ -816,7 +863,7 @@ input[type=text]{
 		/* margin-bottom: 10px; */
 		color: #FFFFFF;
 	}
-	#footer_text h4{
+	#footer_text h3{
 		text-align: left;
 		font-size: 1.1vw;
 	}
@@ -844,6 +891,19 @@ input[type=text]{
 	}
 
 	#boczna{
+		gap: 3.75vw !important;
+	}
+
+	#boczna2{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap:3.75vw;
+		padding: 0px !important;
+	}
+
+	#boczna2{
 		gap: 3.75vw !important;
 	}
 }
